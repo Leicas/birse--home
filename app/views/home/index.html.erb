@@ -1,0 +1,49 @@
+<h1>Bienvenue sur BirseHome</h1>
+<div class="bandeau">
+
+Vous êtes identifié en temps que 
+
+
+ <%= session[:buque] %> <%= session[:nums] %>
+<%= link_to 'déconnection', home_deco_path, :remote=>true %>
+</div>
+<% if session[:admin] %>
+<div class="bloc">
+
+<h2>Admin</h2>
+<p>
+Accès à la <%= link_to "liste des utilisateurs", pgs_path %>
+</p>  
+<p>
+<%= link_to 'debug', home_debug_path, :remote=>true%>  
+</p>
+</div>
+<% end %>
+<div id="blocajax">
+<%= render :partial => 'birsetv' %></div>
+<div class="bloc">
+
+<h2>Compte Foys</h2>
+<p>
+Votre solde est de :
+</p>  
+</div>
+
+<div class="bloc">
+
+<h2>Recherche dc++</h2>
+<p>
+De quoi rechercher les fichiers plus efficacement.
+</p>  
+</div>
+<div class="bloclarge">
+
+<h2>Comment Je Rentre</h2>
+<p>
+Trains empruntés par les pgs:
+<br/> <br/>
+Trajets en voiture:
+</p>  
+</div>
+ <div style="clear: both">&nbsp;</div> 
+ <%= render :partial => 'footer' %></div>

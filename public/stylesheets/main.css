@@ -1,0 +1,133 @@
+@font-face { font-family: InkITM; src: url('INKITM.otf'); } 
+@font-face { font-family: Alice; src: url('Alice_in_Wonderland.ttf'); } 
+html {
+min-height: 100%;
+background-image:-webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #F69C9C),
+    	color-stop(1, #92E792)
+    );
+    background:-moz-linear-gradient(
+    	center top,
+    	#F69C9C 0%,
+    	#92E792 100%
+    );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F69C9C', endColorstr='#92E792',GradientType=0 );
+}
+body {
+color: white;
+}
+a {
+
+color: #F69C9C;
+}
+a:hover {
+color: #7B0404;
+}
+#content {
+-moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+width: 950px;
+margin: auto;
+background-image:-webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #5CE75C),
+    	color-stop(1, #92E792)
+    );
+    background:-moz-linear-gradient(
+    	center top,
+    	#5CE75C 0%,
+    	#92E792 100%
+    );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5CE75C', endColorstr='#92E792',GradientType=0 );
+        padding-bottom: 5px;
+
+}
+h1 {
+font-family: INKitm;
+font-style: normal;
+font-weight:normal;
+font-size: 6em;
+margin:0;
+background-image:-webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #317B31),
+    	color-stop(1, #12B812)
+    );
+    background:-moz-linear-gradient(
+    	center top,
+    	#317B31 0%,
+    	#12B812 100%
+    );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#317B31', endColorstr='#12B812',GradientType=0 );
+
+-moz-border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        padding-left: 30px;
+        padding-top: 5px;
+        color: #5CE75C;
+        margin-bottom: 0;
+}
+.bandeau {
+background-color: #036303;
+color: #7B0404;
+padding: 5px;
+}
+.bloc {
+padding: 5px;
+float: left;
+-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+width: 31%;
+margin: 5px;
+background-color: #317B31;
+}
+.bloclarge {
+padding: 5px;
+float: left;
+-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+width: 62%;
+margin: 5px;
+background-color: #317B31;
+}
+h2 {
+-moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+background-image:-webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #036303),
+    	color-stop(1, #317B31)
+    );
+    background:-moz-linear-gradient(
+    	center top,
+    	#036303 0%,
+    	#317B31 100%
+    );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#036303', endColorstr='#317B31',GradientType=0 );
+font-family: Alice;
+font-weight: normal;
+font-size: 2.5em;
+margin: -5px;
+padding: 10px 10px 5px 10px;
+color: #5CE75C;
+margin-bottom: 5px;
+border-bottom: 1px solid #5CE75C;
+}
+.birsetv p {
+margin-left: 5px;
+margin-top: 0px;
+}

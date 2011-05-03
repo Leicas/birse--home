@@ -1,0 +1,48 @@
+<%= form_for(@pg) do |f| %>
+  <% if @pg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pg.errors.count, "error") %> prohibited this pg from being saved:</h2>
+
+      <ul>
+      <% @pg.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :buque %><br />
+    <%= f.text_field :buque %>
+  </div>
+  <div class="field">
+    <%= f.label :nums %><br />
+    <%= f.text_field :nums %>
+  </div>
+  <div class="field">
+    <%= f.label :foys %><br />
+    <%= f.text_field :foys %>
+  </div>
+  <div class="field">
+    <%= f.label :cvis %><br />
+    <%= f.text_field :cvis %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :admin %><br />
+    <%= f.select :admin, [["oui",true],["non",false]] %>
+      <div class="field">
+    <%= f.label :autolog %><br />
+    <%= f.select :autolog, [["oui",true],["non",false]] %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

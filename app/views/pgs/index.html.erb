@@ -1,0 +1,37 @@
+<h1>Listing pgs</h1>
+
+<table>
+  <tr>
+    <th>Buque</th>
+    <th>Nums</th>
+    <th>Foys</th>
+    <th>Cvis</th>
+    <th>Ip</th>
+    <th>Admin</th>
+    <th>Password</th>
+    <th>Auto-login</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pgs.each do |pg| %>
+  <tr>
+    <td><%= pg.buque %></td>
+    <td><%= pg.nums %></td>
+    <td><%= pg.foys %></td>
+    <td><%= pg.cvis %></td>
+    <td><%= pg.ip %></td>
+    <td><%= pg.admin %></td>
+    <td><%= pg.password %></td>
+    <td><%= pg.autolog %></td>
+    <td><%= link_to 'Show', pg %></td>
+    <td><%= link_to 'Edit', edit_pg_path(pg) %></td>
+    <td><%= link_to 'Destroy', pg, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pg', new_pg_path %>

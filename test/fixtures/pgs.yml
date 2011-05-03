@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  buque: MyString
+  nums: MyString
+  foys: MyString
+  cvis: MyString
+  cfoys: 1.5
+  ccvis: 1.5
+  ip: MyString
+
+two:
+  buque: MyString
+  nums: MyString
+  foys: MyString
+  cvis: MyString
+  cfoys: 1.5
+  ccvis: 1.5
+  ip: MyString

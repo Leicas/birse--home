@@ -1,0 +1,22 @@
+<h1>Identification</h1>
+<div class="bloc">
+
+<h2>Login</h2>
+<%= form_for(@compte) do |f| %>
+ <div class="field">
+    <%= f.label :nums %><br />
+    <%= f.text_field :nums %>
+  </div>
+ 
+ <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
+<div class="bloc">
+<h2>Enregistrement</h2>
+Si vous n'avez pas de compte: <br /><%= link_to 'cliquez ici', new_pg_path %>
+</div>
+ <div style="clear: both">&nbsp;</div> 
+ 
+</div> 
